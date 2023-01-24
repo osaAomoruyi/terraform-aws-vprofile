@@ -1,8 +1,8 @@
-resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
-  name                = "vprofile-bean-prod"
+resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod10" {
+  name                = "vprofile-bean-prod10"
   application         = aws_elastic_beanstalk_application.vprofile-prod.name
-  solution_stack_name = "64bit Amazon Linux 2 v4.1.1 running Tomcat 8.5 Corretto 11"
-  cname_prefix        = "vprofile-bean-prod-domain"
+  solution_stack_name = "64bit Amazon Linux 2 v4.3.0 running Tomcat 8.5 Corretto 11"
+  cname_prefix        = "vprofile-bean-prod10-domain"
   setting {
     name      = "VPCId"
     namespace = "aws:ec2:vpc"
