@@ -48,7 +48,7 @@ variable "DBNAME" {
   default = "accounts"
 }
 variable "DBPASS" {
-  default = "admn123"
+  default = "admin123"
 }
 variable "DBUSER" {
   default = "admin"
